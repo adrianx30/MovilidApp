@@ -1,0 +1,7 @@
+// install cordova plugin with keys
+cordova plugin add cordova-plugin-googlemaps --variable API_KEY_FOR_ANDROID="AIzaSyBAU-8eDm1xrzKZ7GhJ-g_2FZDCShhVLL4" --variable API_KEY_FOR_IOS="AIzaSyCtYf6SrnQKuSr2p3iB12FLPprXF_DlDQA"
+
+cordova plugin add https://github.com/mapsplugin/cordova-plugin-googlemaps#multiple_maps \
+     --variable API_KEY_FOR_ANDROID="AIzaSyBAU-8eDm1xrzKZ7GhJ-g_2FZDCShhVLL4" \
+     --variable API_KEY_FOR_IOS="AIzaSyCtYf6SrnQKuSr2p3iB12FLPprXF_DlDQA" \
+     --nofetch --save
