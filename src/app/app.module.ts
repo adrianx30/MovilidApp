@@ -8,11 +8,14 @@ import { Geolocation } from '@ionic-native/geolocation';
 
 import { MovilidApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ArcgisPage } from '../pages/arcgis/arcgis';
+import { EsriLoaderService } from 'angular-esri-loader';
 
 @NgModule({
   declarations: [
     MovilidApp,
-    HomePage
+    HomePage,
+    ArcgisPage
   ],
   imports: [
     BrowserModule,
@@ -21,14 +24,16 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MovilidApp,
-    HomePage
+    HomePage,
+    ArcgisPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     GoogleMaps,
     Geolocation,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    EsriLoaderService
   ]
 })
 export class AppModule {}
